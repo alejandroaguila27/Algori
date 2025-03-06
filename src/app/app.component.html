@@ -1,7 +1,7 @@
-<header class="bg-black text-white p-4">
-  <div class="container mx-auto flex justify-between items-center">
-    <h1 class="text-2xl font-bold">Algori</h1>
-    <nav>
+<header class="bg-black text-white">
+  <div class="container mx-auto flex justify-between items-center p-4">
+    <img class="h-12" src="/logo-transparent-2.png" alt="Algori">
+    <nav class="hidden md:block">
       <ul class="flex space-x-4">
         <li><a href="#" class="hover:text-teal-400">Inicio</a></li>
         <li><a href="#" class="hover:text-teal-400">Servicios</a></li>
@@ -9,37 +9,82 @@
         <li><a href="#" class="hover:text-teal-400">Contacto</a></li>
       </ul>
     </nav>
+    <button class="md:hidden text-teal-400 focus:outline-none">
+      <!-- Icono de menú hamburguesa -->
+      <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+      </svg>
+    </button>
   </div>
 </header>
-<section class="bg-gray-900 text-white py-20">
-  <div class="container mx-auto text-center">
-    <h2 class="text-4xl font-bold mb-4">Desarrollo de Software a Medida</h2>
-    <p class="text-xl mb-8">Soluciones IT para el sector privado y profesional.</p>
-    <a href="#" class="bg-teal-500 text-white px-6 py-3 rounded-full font-semibold hover:bg-teal-600">Contactanos</a>
+<section class="bg-gray-900 text-white py-20 relative">
+  <div class="absolute inset-0 bg-[url('/tech-background.jpg')] bg-cover opacity-20"></div>
+  <div class="container mx-auto text-center relative">
+    <h2 class="text-4xl font-bold mb-4 animate-fade-in">Desarrollo de Software a Medida</h2>
+    <p class="text-xl mb-8 animate-fade-in">Soluciones IT para el sector privado y profesional.</p>
+    <a href="#" class="bg-teal-500 text-white px-6 py-3 rounded-full font-semibold hover:bg-teal-600 animate-bounce">Contáctanos</a>
   </div>
 </section>
 <section class="py-16 bg-white">
   <div class="container mx-auto">
     <h2 class="text-3xl font-bold text-center mb-8">Nuestros Servicios</h2>
     <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-      <div class="bg-gray-50 p-6 rounded-lg shadow-lg">
+      <div class="bg-gray-50 p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow">
+        <div class="text-center mb-4">
+          <svg class="w-12 h-12 mx-auto text-teal-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"></path>
+          </svg>
+        </div>
         <h3 class="text-xl font-bold mb-4 text-teal-500">Desarrollo Web</h3>
         <p class="text-gray-700">Creación de aplicaciones web modernas y escalables.</p>
       </div>
-      <div class="bg-gray-50 p-6 rounded-lg shadow-lg">
+      <div class="bg-gray-50 p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow">
+        <div class="text-center mb-4">
+          <svg class="w-12 h-12 mx-auto text-teal-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4"></path>
+          </svg>
+        </div>
         <h3 class="text-xl font-bold mb-4 text-teal-500">Consultoría IT</h3>
         <p class="text-gray-700">Asesoramiento especializado en tecnología para tu negocio.</p>
       </div>
-      <div class="bg-gray-50 p-6 rounded-lg shadow-lg">
+      <div class="bg-gray-50 p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow">
+        <div class="text-center mb-4">
+          <svg class="w-12 h-12 mx-auto text-teal-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z"></path>
+          </svg>
+        </div>
         <h3 class="text-xl font-bold mb-4 text-teal-500">Soporte Técnico</h3>
         <p class="text-gray-700">Soporte continuo y mantenimiento de sistemas.</p>
       </div>
     </div>
   </div>
 </section>
+<section class="bg-gray-50 py-16">
+  <div class="container mx-auto">
+    <h2 class="text-3xl font-bold text-center mb-8">Contáctanos</h2>
+    <form class="max-w-lg mx-auto">
+      <div class="mb-4">
+        <input type="text" placeholder="Nombre" class="w-full px-4 py-2 rounded-lg border border-gray-300 focus:outline-none focus:border-teal-500">
+      </div>
+      <div class="mb-4">
+        <input type="email" placeholder="Correo electrónico" class="w-full px-4 py-2 rounded-lg border border-gray-300 focus:outline-none focus:border-teal-500">
+      </div>
+      <div class="mb-4">
+        <textarea placeholder="Mensaje" class="w-full px-4 py-2 rounded-lg border border-gray-300 focus:outline-none focus:border-teal-500" rows="5"></textarea>
+      </div>
+      <button type="submit" class="bg-teal-500 text-white px-6 py-3 rounded-full font-semibold hover:bg-teal-600">Enviar Mensaje</button>
+    </form>
+  </div>
+</section>
 <footer class="bg-black text-white py-8">
   <div class="container mx-auto text-center">
+    <div class="mb-4">
+      <a href="#" class="mx-2 hover:text-teal-400">Facebook</a>
+      <a href="#" class="mx-2 hover:text-teal-400">Twitter</a>
+      <a href="#" class="mx-2 hover:text-teal-400">LinkedIn</a>
+    </div>
     <p>&copy; 2023 Algori. Todos los derechos reservados.</p>
+    <p class="mt-2"><a href="#" class="hover:text-teal-400">Política de Privacidad</a></p>
   </div>
 </footer>
 <router-outlet />
