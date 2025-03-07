@@ -28,10 +28,13 @@
     <p class="text-xs text-gray-400">Innovación & Elegancia</p>
   </div>
 </header>
-<section class="bg-black text-white min-h-screen flex items-center justify-center relative overflow-hidden">
+
+<!-- Añade ml-24 a las secciones para compensar el espacio del header -->
+<section class="bg-black text-white min-h-screen flex items-center justify-center relative overflow-hidden ml-24">
   <img class="" src="/logo-transparent-2.png" alt="Algori Mx">
 </section>
-<section class="bg-black text-white min-h-screen flex items-center justify-center relative overflow-hidden">
+
+<section class="bg-black text-white min-h-screen flex items-center justify-center relative overflow-hidden ml-24">
   <div class="absolute inset-0 bg-[url('/tech-background.jpg')] bg-cover bg-center opacity-20 transform scale-110"></div>
   <div class="container mx-auto text-center relative z-10">
     <h2 class="text-6xl font-bold mb-6 animate-fade-in">Desarrollo de Software a Medida</h2>
@@ -42,7 +45,8 @@
     <a href="#" class="bg-teal-500 text-white px-8 py-4 rounded-full font-semibold hover:bg-teal-600 animate-bounce">Explora Nuestros Servicios</a>
   </div>
 </section>
-<section class="py-20 bg-white">
+
+<section class="py-20 min-h-screen bg-white ml-24">
   <div class="container mx-auto">
     <h2 class="text-4xl font-bold text-center mb-12">Nuestros Servicios</h2>
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
@@ -82,7 +86,8 @@
     </div>
   </div>
 </section>
-<section class="bg-gray-900 text-white py-20">
+
+<section class="bg-gray-900 min-h-screen text-white py-20 ml-24">
   <div class="container mx-auto">
     <h2 class="text-4xl font-bold text-center mb-12">Contáctanos</h2>
     <form class="max-w-lg mx-auto bg-gray-800 p-8 rounded-lg shadow-lg">
@@ -99,7 +104,8 @@
     </form>
   </div>
 </section>
-<footer class="bg-black text-white py-12">
+
+<footer class="bg-black text-white py-12 ml-24">
   <div class="container mx-auto text-center">
     <div class="mb-6">
       <a href="#" class="mx-3 hover:text-teal-400 transition-transform transform hover:scale-110">Facebook</a>
@@ -110,4 +116,5 @@
     <p class="mt-2 text-sm text-gray-400"><a href="#" class="hover:text-teal-400">Política de Privacidad</a></p>
   </div>
 </footer>
+
 <router-outlet />
